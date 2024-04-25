@@ -1,0 +1,36 @@
+{
+  "file-explorer:new-file": [],
+  "zk-prefixer": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "N"
+    }
+  ],
+  "command-palette:open": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "]"
+    }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "["
+    }
+  ]
+}

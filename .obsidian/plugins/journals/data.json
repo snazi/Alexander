@@ -1,0 +1,168 @@
+{
+  "journals": {
+    "life": {
+      "id": "life",
+      "type": "calendar",
+      "name": "Life",
+      "rootFolder": "08 - Journals/Life",
+      "openOnStartup": false,
+      "startupSection": "day",
+      "day": {
+        "enabled": true,
+        "openMode": "active",
+        "nameTemplate": "",
+        "dateFormat": "YYYY/MMMM/YYYY-MMMM-DD",
+        "folder": "Daily",
+        "template": "99 - Meta/00 - Templates/TEMPLATE - Life Daily.md",
+        "ribbon": {
+          "show": true,
+          "icon": "dice",
+          "tooltip": "Open Life Journal"
+        },
+        "createOnStartup": false
+      },
+      "week": {
+        "enabled": true,
+        "openMode": "active",
+        "nameTemplate": "",
+        "dateFormat": "",
+        "folder": "Weekly",
+        "template": "99 - Meta/00 - Templates/TEMPLATE - Life Weekly.md",
+        "ribbon": {
+          "show": false,
+          "icon": "",
+          "tooltip": ""
+        },
+        "createOnStartup": false
+      },
+      "month": {
+        "enabled": false,
+        "openMode": "active",
+        "nameTemplate": "",
+        "dateFormat": "",
+        "folder": "",
+        "template": "",
+        "ribbon": {
+          "show": false,
+          "icon": "",
+          "tooltip": ""
+        },
+        "createOnStartup": false
+      },
+      "quarter": {
+        "enabled": false,
+        "openMode": "active",
+        "nameTemplate": "",
+        "dateFormat": "",
+        "folder": "",
+        "template": "",
+        "ribbon": {
+          "show": false,
+          "icon": "",
+          "tooltip": ""
+        },
+        "createOnStartup": false
+      },
+      "year": {
+        "enabled": false,
+        "openMode": "active",
+        "nameTemplate": "",
+        "dateFormat": "",
+        "folder": "",
+        "template": "",
+        "ribbon": {
+          "show": false,
+          "icon": "",
+          "tooltip": ""
+        },
+        "createOnStartup": false
+      }
+    },
+    "meditation": {
+      "id": "meditation",
+      "type": "calendar",
+      "name": "Meditation",
+      "rootFolder": "08 - Journals/Meditation",
+      "openOnStartup": false,
+      "startupSection": "day",
+      "day": {
+        "enabled": true,
+        "openMode": "active",
+        "nameTemplate": "",
+        "dateFormat": "YYYY/MMMM/YYYY-MMMM-DD",
+        "folder": "Daily",
+        "template": "99 - Meta/00 - Templates/TEMPLATE - Life Daily.md",
+        "ribbon": {
+          "show": false,
+          "icon": "",
+          "tooltip": ""
+        },
+        "createOnStartup": false
+      },
+      "week": {
+        "enabled": false,
+        "openMode": "active",
+        "nameTemplate": "",
+        "dateFormat": "",
+        "folder": "",
+        "template": "",
+        "ribbon": {
+          "show": false,
+          "icon": "",
+          "tooltip": ""
+        },
+        "createOnStartup": false
+      },
+      "month": {
+        "enabled": false,
+        "openMode": "active",
+        "nameTemplate": "",
+        "dateFormat": "",
+        "folder": "",
+        "template": "",
+        "ribbon": {
+          "show": false,
+          "icon": "",
+          "tooltip": ""
+        },
+        "createOnStartup": false
+      },
+      "quarter": {
+        "enabled": false,
+        "openMode": "active",
+        "nameTemplate": "",
+        "dateFormat": "",
+        "folder": "",
+        "template": "",
+        "ribbon": {
+          "show": false,
+          "icon": "",
+          "tooltip": ""
+        },
+        "createOnStartup": false
+      },
+      "year": {
+        "enabled": false,
+        "openMode": "active",
+        "nameTemplate": "",
+        "dateFormat": "",
+        "folder": "",
+        "template": "",
+        "ribbon": {
+          "show": false,
+          "icon": "",
+          "tooltip": ""
+        },
+        "createOnStartup": false
+      }
+    }
+  },
+  "calendar": {
+    "firstDayOfWeek": -1,
+    "firstWeekOfYear": 1
+  },
+  "calendar_view": {
+    "leaf": "right",
+    "weeks": "left"
+  }
+}
