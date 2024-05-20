@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HG Coaching May 04, 2024.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f180590bb797c237",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fire some code.md",
+                "file": "Untitled 3.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fire some code.md",
+                "file": "Untitled 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fire some code.md",
+                "file": "Untitled 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fire some code.md"
+                "file": "Untitled 3.md"
               }
             }
           },
@@ -212,12 +199,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f180590bb797c237",
+  "active": "0405637737b9a080",
   "lastOpenFiles": [
+    "99 - Meta/00 - Templates/TEMPLATE WEEKLY.md",
+    "Untitled 3.md",
+    "HG Coaching May 04, 2024.md",
+    "fire some code.md",
     "08 - Journals/Life/Daily/2024/April/2024-April-24.md",
     "08 - Journals/Life/Daily/2024/April/2024-April-25.md",
-    "fire some code.md",
-    "HG Coaching May 04, 2024.md",
     "99 - Meta/00 - Templates/TEMPLATE - HG Coaching.md",
     "99 - Meta/00 - Templates/(TEMPLATE) Daily.md",
     "99 - Meta/00 - Templates/TEMPLATE - Life Daily.md",
@@ -243,7 +232,6 @@
     "01 - Projects/Enhancing my Journal/Journal Direction.md",
     "03 - Resources/dev sandbox",
     "01 - Projects/Enhancing my Journal/Journal Plans.md",
-    "08 - Journals/Life/Daily/2024/April/2024-April-22.md",
     "01 - Projects/Going Endgame with CoC DD",
     "01 - Projects/Enhancing my Journal",
     "08 - Journals/Meditation/Daily/2024/April",

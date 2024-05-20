@@ -12,5 +12,5 @@ actions:
 ```
 
 ```dataviewjs
-await dv.view("sandbox_code/get_all_notes_with_feelings")
+await dv.view("sandbox_code/get_all_notes_with_feelings", {testVar: 'should see this'})
 ```

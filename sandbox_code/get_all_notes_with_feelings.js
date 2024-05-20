@@ -1,16 +1,25 @@
 console.log("START SCRIPT")
 
-var dateformat = "MMM DD, YYYY";
-var endDate = moment("2024-04-25").endOf('week');
-var startDate = moment("2024-04-25").endOf('week').subtract(6, "days");
-var dateToCheck;
+// * all passed down variables in the file get stored in input
+console.log("date passed down is " + input['dateToday'])
 
+// TODO: pass down the dates from the template file
+var dateformat = "MMM DD, YYYY";
+var endDate = moment(input['dateToday']).endOf('week');
+var startDate = moment(input['dateToday']).endOf('week').subtract(6, "days");
+var dateToCheck;
+var pathMonth = moment(input['dateToday']).format('MMMM');
+var pathYear = moment(input['dateToday']).format('YYYY');
+var journalPath = "08 - Journals/Life/Daily/"+ pathYear + "/" + pathMonth;
+
+console.log("created path month "+ pathMonth + " created path Year " + pathYear)
+console.log("created path is: "+ journalPath)
 console.log(startDate.format('YYYY-MM-DD') + " to " + endDate.format('YYYY-MM-DD'))
 
 const journalEntriesInTheWeek = await Promise.all(
     dv
     // TODO: use templater to change the folder path. <original journal directory>/<year>/<month>
-    .pages('"08 - Journals/Life/Daily/2024/April"')
+    .pages(`"${journalPath}"`)
       // * if the date in the frontmatter is between start and end of the week
     .where((page) =>
       // * using the bracket notation is how I can get variable names that contain hyphen (-)
@@ -46,6 +55,7 @@ const emotionsPerEntry = journalEntriesInTheWeek.map(({ link, content, ctime }) 
     }),
 }));
 
+// TODO: list down all my known emotions
 const emotionMapping = {
   Happiness: 'happy',
   Joy: 'happy',
@@ -60,7 +70,6 @@ const emotionMapping = {
   // Add more specific emotions and their mappings as needed
 };
 
-console.log("running")
 // * Group entries by underlying emotions
 const groupedByUnderlyingEmotion = emotionsPerEntry.reduce((acc, { entry }) => {
   // * each entry is { emotion, strength, description, ctime }. Destructure and iterate over it
@@ -92,11 +101,22 @@ for (const emotion in groupedByUnderlyingEmotion) {
 
 // console.log(JSON.stringify(groupedByUnderlyingEmotion, null, 2));
 
-// * output the correct formatting in Obsidian for each emotion group and its entries
+// * sample code that uses console log instead of obsidian 
+// for (const emotion in groupedByUnderlyingEmotion) {
+//   console.log(`Emotion: ${emotion}`);
+//   groupedByUnderlyingEmotion[emotion].forEach(({ emotion, strength, description, ctime }) => {
+//     console.log(`  - ${emotion} ${strength}: ${description} (ctime: ${ctime})`);
+//   });
+// }
+
+
 for (const emotion in groupedByUnderlyingEmotion) {
-  console.log(`Emotion: ${emotion}`);
+  // console.log(`Emotion: ${emotion}`);
+  dv.header(2, `${emotion}`);
   groupedByUnderlyingEmotion[emotion].forEach(({ emotion, strength, description, ctime }) => {
-    console.log(`  - ${emotion} ${strength}: ${description} (ctime: ${ctime})`);
+    // console.log(`  - ${emotion} ${strength}: ${description} (ctime: ${ctime})`);
+    dv.header(3, `${emotion} - ${strength}`);
+    dv.paragraph(`${description}`);
   });
 }
 
