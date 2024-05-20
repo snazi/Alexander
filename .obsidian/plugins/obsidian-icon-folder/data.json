@@ -1,11 +1,13 @@
 {
   "settings": {
-    "migrated": 4,
+    "migrated": 5,
     "iconPacksPath": ".obsidian/icons",
     "fontSize": 16,
-    "emojiStyle": "none",
+    "emojiStyle": "native",
     "iconColor": null,
-    "recentlyUsedIcons": [],
+    "recentlyUsedIcons": [
+      "BoBxCodeAlt"
+    ],
     "recentlyUsedIconsSize": 5,
     "rules": [
       {
@@ -90,6 +92,8 @@
     "iconColorInFrontmatterFieldName": "iconColor",
     "iconsInLinksEnabled": true,
     "iconIdentifier": ":",
-    "debugMode": true
-  }
+    "debugMode": true,
+    "iconInTitlePosition": "above"
+  },
+  "99 - Meta/01 - Scripts": "BoBxCodeAlt"
 }
